@@ -13,7 +13,7 @@ public class PrintLib
     {
         if (_log is ClassLogger)
         {
-            _log.Log("Hello World!");
+            _log.Log("Class World!");
         }
     }
 }
