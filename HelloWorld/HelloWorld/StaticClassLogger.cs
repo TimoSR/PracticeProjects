@@ -1,10 +1,10 @@
 namespace HelloWorld;
 
-public static class AwesomeLogger
+public static class StaticClassLogger
 {
     public static int AMOUNT_OF_LOGGERS;
 
-    static AwesomeLogger()
+    static StaticClassLogger()
     {
         AMOUNT_OF_LOGGERS++;
     }

@@ -11,7 +11,7 @@ public class PrintLib
     
     public void HelloWorld()
     {
-        if (_log is Logger)
+        if (_log is ClassLogger)
         {
             _log.Log("Hello World!");
         }

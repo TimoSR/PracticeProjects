@@ -1,20 +1,20 @@
 ﻿using HelloWorld;
 
-ILogger newLogger1 = new Logger();
+ILogger newLogger1 = new ClassLogger();
 
-ILogger newLogger2 = new Logger();
+ILogger newLogger2 = new ClassLogger();
 
 PrintLib newPrintLib = new PrintLib(newLogger1);
 
 newPrintLib.HelloWorld();
 
-newLogger1.GetActiveLoggers();
+Console.WriteLine(ClassLogger.AMOUNT_OF_LOGGERS);
 
 string @string1 = "Awesome World!";
 
-AwesomeLogger.Log(@string1);
+StaticClassLogger.Log(@string1);
 
-Console.WriteLine(AwesomeLogger.AMOUNT_OF_LOGGERS);
+Console.WriteLine(StaticClassLogger.AMOUNT_OF_LOGGERS);
 
 string @string2 = "Static World 1!";  
 

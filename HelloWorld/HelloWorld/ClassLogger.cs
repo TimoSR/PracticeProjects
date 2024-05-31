@@ -1,17 +1,12 @@
 namespace HelloWorld;
 
-public class Logger : ILogger
+public class ClassLogger : ILogger
 {
-    private static int _activeLoggers;
+    public static int AMOUNT_OF_LOGGERS;
 
-    public Logger()
+    public ClassLogger()
     {
-        _activeLoggers++;
-    }
-
-    public void GetActiveLoggers()
-    {
-        Console.WriteLine(_activeLoggers);
+        AMOUNT_OF_LOGGERS++;
     }
     
     public void Log(string log)
@@ -27,6 +22,5 @@ public class Logger : ILogger
 
 public interface ILogger
 {
-    public void GetActiveLoggers();
     public void Log(string log);
 }
