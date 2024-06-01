@@ -1,6 +1,6 @@
 namespace HelloWorld;
 
-public class PrintLib
+internal class PrintLib
 {
     private ILogger _log;
 

@@ -1,6 +1,6 @@
 namespace HelloWorld;
 
-public class StaticMethods
+internal class StaticMethods
 {
 
     public static int AMOUNT_OF_LOGGERS;

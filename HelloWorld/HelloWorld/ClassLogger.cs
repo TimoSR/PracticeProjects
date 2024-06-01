@@ -1,6 +1,6 @@
 namespace HelloWorld;
 
-public class ClassLogger : ILogger
+internal class ClassLogger : ILogger
 {
     public static int AMOUNT_OF_LOGGERS;
 
