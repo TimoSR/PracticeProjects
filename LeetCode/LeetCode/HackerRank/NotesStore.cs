@@ -4,7 +4,7 @@ public class NotesStore
 {
     private readonly List<(string, string)> _notes = new();
     private readonly string[] _states = ["completed", "active", "others"];
-
+    
     public void AddNote(string state, string name)
     {
         if (string.IsNullOrEmpty(name))
