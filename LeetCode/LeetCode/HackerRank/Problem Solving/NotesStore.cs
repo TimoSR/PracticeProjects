@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.HackerRank;
+namespace LeetCode.HackerRank.Problem_Solving;
 
 public class NotesStore
 {

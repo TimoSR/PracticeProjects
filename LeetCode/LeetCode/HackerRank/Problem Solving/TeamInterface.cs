@@ -1,4 +1,4 @@
-namespace LeetCode.HackerRank;
+namespace LeetCode.HackerRank.Problem_Solving;
 
 public class TeamInterface
 {

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace LeetCode.Problem_Solving;
+namespace LeetCode.HackerRank.Problem_Solving;
 
 public class ArraySum
 {
