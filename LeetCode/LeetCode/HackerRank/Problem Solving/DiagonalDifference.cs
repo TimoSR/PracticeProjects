@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace LeetCode.Problem_Solving;
 
 public class DiagonalDifference

@@ -1,3 +1,5 @@
+using System;
+
 namespace LeetCode.SystemBasics;
 
 public class WorkingWithStrings
