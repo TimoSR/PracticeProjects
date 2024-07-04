@@ -1,6 +1,8 @@
 ﻿using LeetCode.SystemBasics;
 
-BinaryHexASCII.CharHexBinaryStuff();
+/*BinaryHexASCII.CharHexBinaryStuff();
 WorkingWithStringTemplates.StringStuffReplace();
 WorkingWithStringTemplates.StringStuffFormat();
-WorkingWithStringTemplates.StringStuffInterpolation();
+WorkingWithStringTemplates.StringStuffInterpolation();*/
+SpreadElement.CombineArrays();
+LongRawStringLiterals.LongString();

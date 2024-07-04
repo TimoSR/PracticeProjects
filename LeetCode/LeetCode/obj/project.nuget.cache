@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
-  "dgSpecHash": "uMzFoL77QYX4PNGaW01R4L8cmScpYPIwCOHNZadjO6KgFCExyRz1eELACC1CFdSLlSCmeJOSnFTLXthDuctoqw==",
-=======
-  "dgSpecHash": "PDe6AeZApi5LZXgGHi4UKqFEEUUhlpoWLgInwtnULV6jA41gNp0VS6a0YvuEpl1QHu/wXWkUV2KAqK/8ZOz7MA==",
->>>>>>> Stashed changes
+  "dgSpecHash": "amjg3/EamhTKlsCC/qXPZsfOiqklyDxE9xtz2T4IOuixw4rdSUQEsEwNZgmO8+MalohxBuH3xcJ4mQ5fX+5T1w==",
   "success": true,
-  "projectFilePath": "/Users/archit3ct/Code/PracticeProjects/LeetCode/LeetCode/LeetCode.csproj",
+  "projectFilePath": "C:\\Users\\timot\\code\\PracticeProjects\\LeetCode\\LeetCode\\LeetCode.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
