@@ -1,3 +1,4 @@
+
 export function simpleArraySum(ar: number[]): number {
 
     let sum: number = 0;

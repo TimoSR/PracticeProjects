@@ -1,3 +1,4 @@
+
 export function compareTriplets(a: number[], b: number[]): number[] {
 
     let Alice: number = 0;
