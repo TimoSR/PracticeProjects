@@ -1,5 +1,5 @@
 
-export function PlusMinus(arr: number[]): void {
+export function plusMinus(arr: number[]): void {
 
     let positive: number = 0;
     let negative: number = 0;

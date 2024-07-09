@@ -1,5 +1,6 @@
 import {Arrays} from "./LanguageBasics/Arrays";
-import {PlusMinus} from "./HackerRank/ProblemSolving/Arrays/PlusMinusRatio";
+import {plusMinus} from "./HackerRank/ProblemSolving/Arrays/PlusMinus";
+import {staircase} from "./HackerRank/ProblemSolving/Strings/StairCase";
 
 function main() {
 
@@ -7,7 +8,8 @@ function main() {
     let array: number[] = [0, 1, -1, 0, 1];
 
     Arrays.printer();
-    PlusMinus(array);
+    plusMinus(array);
+    staircase(4);
 }
 
 // Run the main function

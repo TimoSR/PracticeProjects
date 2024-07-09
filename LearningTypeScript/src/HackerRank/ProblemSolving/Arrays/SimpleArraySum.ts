@@ -1,5 +1,5 @@
 
-export function simpleArraySum(ar: number[]): number {
+export function SimpleArraySum(ar: number[]): number {
 
     let sum: number = 0;
 
