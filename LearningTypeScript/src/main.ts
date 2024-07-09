@@ -1,5 +1,5 @@
 import {Arrays} from "./LanguageBasics/Arrays";
-import {PlusMinus} from "./HackerRank/ProblemSolving/PlusMinusRatio";
+import {PlusMinus} from "./HackerRank/ProblemSolving/Arrays/PlusMinusRatio";
 
 function main() {
 
