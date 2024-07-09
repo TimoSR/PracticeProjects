@@ -1,3 +1,4 @@
+
 export function minMaxSum(arr: number[]): void {
 
     // Sort the array numerically in ascending order
@@ -17,11 +18,25 @@ export function minMaxSum(arr: number[]): void {
     let maxArray: number[] = arr.slice(1);
 
     for(let i = 0; i < arr.length - 1; i++) {
-
         minSum += minArray[i];
         maxSum += maxArray[i];
     }
 
     console.log(`${minSum} ${maxSum}`);
+}
 
+export function gptMinMaxSumSolution(arr: number[]): void {
+    // Sort the array numerically in ascending order
+    arr.sort((a, b) => a - b);
+
+    let minSum: number = 0;
+    let maxSum: number = 0;
+
+    // Calculate minSum and maxSum in a single loop without creating additional arrays
+    for (let i = 0; i < arr.length - 1; i++) {
+        minSum += arr[i]; // Sum of first n-1 elements
+        maxSum += arr[i + 1]; // Sum of last n-1 elements
+    }
+
+    console.log(`${minSum} ${maxSum}`);
 }
