@@ -1,3 +1,4 @@
+
 export class Arrays {
 
     private static array: number[] = new Array(6);
