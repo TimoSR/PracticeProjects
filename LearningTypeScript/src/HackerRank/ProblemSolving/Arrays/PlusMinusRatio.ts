@@ -15,13 +15,16 @@ export function PlusMinus(arr: number[]): void {
         else {
             zero++;
         }
+
     }
 
     let ratios: number[] = [positive/arr.length,
-        negative/arr.length,
-        zero/arr.length];
+                            negative/arr.length,
+                            zero/arr.length];
 
     for(let value of ratios) {
+
         console.log(`${value.toFixed(6)}`);
+
     }
 }

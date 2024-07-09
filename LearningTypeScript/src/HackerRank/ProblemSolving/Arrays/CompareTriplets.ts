@@ -12,6 +12,7 @@ export function compareTriplets(a: number[], b: number[]): number[] {
         else if (a[i] < b[i]) {
             Bob++;
         }
+
     }
 
     return [Alice, Bob];

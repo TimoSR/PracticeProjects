@@ -10,6 +10,7 @@ export function diagonalDifference(arr: number[][]): number {
 
         RightSum += arr[i][i];
         LeftSum += arr[i][j];
+
     }
 
     return Math.abs(RightSum - LeftSum);
