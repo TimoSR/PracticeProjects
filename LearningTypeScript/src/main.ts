@@ -1,7 +1,9 @@
-import {Arrays} from "./LanguageBasics/Arrays";
+import {Arrays} from "./LanguageBasics/Arrays/Arrays";
 import {plusMinus} from "./HackerRank/ProblemSolving/Arrays/PlusMinus";
 import {staircase} from "./HackerRank/ProblemSolving/Strings/StairCase";
 import {minMaxSum} from "./HackerRank/ProblemSolving/Arrays/MinMaxSum";
+import {BinaryHexASCII} from "./LanguageBasics/Strings/BinaryHexASCII";
+import {LongRawStringLiterals} from "./LanguageBasics/Strings/LongRawStringLiterals";
 
 function main() {
 
@@ -13,6 +15,8 @@ function main() {
     plusMinus(array);
     staircase(4);
     minMaxSum(array2);
+    BinaryHexASCII.charHexBinaryStuff();
+    LongRawStringLiterals.longString();
 }
 
 // Run the main function
