@@ -2,7 +2,7 @@ using System;
 
 namespace LeetCode.SystemBasics;
 
-public class WorkingWithStrings
+public class StringGuard
 {
     public void SayHello(string @string)
     {

@@ -4,6 +4,7 @@ import {staircase} from "./HackerRank/ProblemSolving/Strings/StairCase";
 import {minMaxSum} from "./HackerRank/ProblemSolving/Arrays/MinMaxSum";
 import {BinaryHexASCII} from "./LanguageBasics/Strings/BinaryHexASCII";
 import {LongRawStringLiterals} from "./LanguageBasics/Strings/LongRawStringLiterals";
+import {FilteringAndJoiningStringArrays} from "./LanguageBasics/Strings/FilteringAndJoiningStringArrays";
 
 function main() {
 
@@ -16,7 +17,7 @@ function main() {
     staircase(4);
     minMaxSum(array2);
     BinaryHexASCII.charHexBinaryStuff();
-    LongRawStringLiterals.longString();
+    FilteringAndJoiningStringArrays.filterArray();
 }
 
 // Run the main function
