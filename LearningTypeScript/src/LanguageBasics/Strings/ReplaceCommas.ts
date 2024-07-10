@@ -1,4 +1,3 @@
-
 function replaceCommasWithDots(input: string): string {
 
     /*

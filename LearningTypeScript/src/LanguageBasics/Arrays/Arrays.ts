@@ -1,4 +1,3 @@
-
 export class Arrays {
 
     private static array: number[] = new Array(6);
@@ -8,13 +7,13 @@ export class Arrays {
 
         console.log("Undefined Array")
 
-        for(let value of this.array) {
+        for (let value of this.array) {
             console.log(value);
         }
 
         console.log("Defined 0 Array")
 
-        for(let valued of this.arrayFill) {
+        for (let valued of this.arrayFill) {
             console.log(valued);
         }
     }

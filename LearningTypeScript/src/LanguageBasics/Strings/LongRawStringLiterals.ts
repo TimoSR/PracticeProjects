@@ -1,9 +1,9 @@
 export class LongRawStringLiterals {
     public static longString(): void {
-        const longitude:number = 5;
-        const latitude:number = 4;
+        const longitude: number = 5;
+        const latitude: number = 4;
 
-        const longMessage:string = `
+        const longMessage: string = `
             This is a long message.
             It has several lines.
                 Some are indented
@@ -12,7 +12,7 @@ export class LongRawStringLiterals {
             Some have "quoted text" in them.
         `;
 
-        const location:string = `You are at ${longitude}, ${latitude}`;
+        const location: string = `You are at ${longitude}, ${latitude}`;
 
         console.log();
         console.log(longMessage);
