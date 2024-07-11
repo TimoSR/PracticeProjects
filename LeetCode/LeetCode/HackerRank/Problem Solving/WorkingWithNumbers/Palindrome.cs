@@ -6,6 +6,8 @@ public class Palindrome
     {
         var largestPalindrome = 0;
 
+        // A good examples of comparing all possibilities of 3-digit numbers
+        
         for (var i = 999; i >= 100; i--)
         {
             for (int j = i; j >= 100; j--)
