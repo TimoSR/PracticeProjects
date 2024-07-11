@@ -10,9 +10,9 @@ public class Palindrome
         
         for (var i = 999; i >= 100; i--)
         {
-            for (int j = i; j >= 100; j--)
+            for (var j = i; j >= 100; j--)
             {
-                int value = i * j;
+                var value = i * j;
 
                 if (IsAPalindrome(value) && value > largestPalindrome)
                 {
@@ -37,7 +37,7 @@ public class Palindrome
         for (var i = 0; i < halfNumberLength; i++)
         {
             
-            // I look from oposite directions of the the string, to measure each
+            // I look from opposite directions of the string, to measure each
             if (numberString[i] != numberString[numberLength - 1 - i])
             {
                 return false;
