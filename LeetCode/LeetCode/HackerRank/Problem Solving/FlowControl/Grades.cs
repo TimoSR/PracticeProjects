@@ -1,4 +1,4 @@
-namespace LeetCode.HackerRank.Problem_Solving;
+namespace LeetCode.HackerRank.Problem_Solving.FlowControl;
 
 public class Grades
 {
