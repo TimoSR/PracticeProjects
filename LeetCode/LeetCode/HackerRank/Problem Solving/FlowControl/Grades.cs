@@ -13,7 +13,7 @@ public class Grades
             {
                 processedGrades.Add(grade);
             }
-            else
+            else if (grade >= 38)
             {
                 var roundedGrade = RoundToNearest5(grade);
                 var distance = roundedGrade - grade;
