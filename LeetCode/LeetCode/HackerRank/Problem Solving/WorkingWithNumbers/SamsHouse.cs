@@ -36,7 +36,7 @@ public class SamsHouse
     /// <param name="treeLocation">The location of the tree.</param>
     /// <param name="fruits">The list of distances fruits fall from the tree.</param>
     /// <returns>The count of fruits that fall within the house range.</returns>
-    private static int countFruitOnRoof(ValueTuple<int, int> houseRange, int treeLocation, List<int> fruits)
+    private static int countFruitOnRoof((int start, int end) houseRange, int treeLocation, List<int> fruits)
     {
         var fruitCount = 0;
         
