@@ -2,16 +2,29 @@ namespace LeetCode.HackerRank.Problem_Solving.WorkingWithNumbers;
 
 public class SamsHouse
 {
+    
+    /// <summary>
+    /// Counts the number of apples and oranges that fall within the house range.
+    /// </summary>
+    /// <param name="s">The start point of the house.</param>
+    /// <param name="t">The end point of the house.</param>
+    /// <param name="a">The location of the apple tree.</param>
+    /// <param name="b">The location of the orange tree.</param>
+    /// <param name="apples">The list of distances apples fall from the tree.</param>
+    /// <param name="oranges">The list of distances oranges fall from the tree.</param>
     public static void countApplesAndOranges(int s, int t, int a, int b, List<int> apples, List<int> oranges)
     {
         var appleCount = 0;
         var orangeCount = 0;
+        var houseRange = (s, t);
+        var appleTreeLocation = a;
+        var orangeTreeLocation = b;
 
         foreach (var unitsDistance in apples)
         {
-            var fallpoint = FallPoint(a, unitsDistance);
+            var fallpoint = FallPoint(appleTreeLocation, unitsDistance);
 
-            if (WithinHouseRange(s, t, fallpoint))
+            if (WithinHouseRange(houseRange, fallpoint))
             {
                 appleCount++;
             }
@@ -21,9 +34,9 @@ public class SamsHouse
 
         foreach (var unitsDistance in oranges)
         {
-            var fallpoint = FallPoint(b, unitsDistance);
+            var fallpoint = FallPoint(orangeTreeLocation, unitsDistance);
 
-            if (WithinHouseRange(s, t, fallpoint))
+            if (WithinHouseRange(houseRange, fallpoint))
             {
                 orangeCount++;
             }
@@ -37,9 +50,9 @@ public class SamsHouse
         return treeLocation + unitsDistance;
     }
 
-    private static bool WithinHouseRange(int s, int t, int fallPoint)
+    private static bool WithinHouseRange(ValueTuple<int, int> houseRange, int fallPoint)
     {
-        if (fallPoint >= s && fallPoint <= t)
+        if (fallPoint >= houseRange.Item1 && fallPoint <= houseRange.Item2)
         {
             return true;
         }
