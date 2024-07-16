@@ -2,6 +2,9 @@ namespace LeetCode.HackerRank.Problem_Solving.WorkingWithNumbers;
 
 public class SamsHouse
 {
+    
+    //O(n+m)
+    
     /// <summary>
     /// Counts the number of apples and oranges that fall within the house range.
     /// </summary>
