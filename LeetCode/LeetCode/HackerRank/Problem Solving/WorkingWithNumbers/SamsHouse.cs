@@ -14,45 +14,63 @@ public class SamsHouse
     /// <param name="oranges">The list of distances oranges fall from the tree.</param>
     public static void countApplesAndOranges(int s, int t, int a, int b, List<int> apples, List<int> oranges)
     {
-        var appleCount = 0;
-        var orangeCount = 0;
-        var houseRange = (s, t);
+        var houseRange = (start: s, end: t);
         var appleTreeLocation = a;
         var orangeTreeLocation = b;
 
-        foreach (var unitsDistance in apples)
-        {
-            var fallpoint = FallPoint(appleTreeLocation, unitsDistance);
-
-            if (WithinHouseRange(houseRange, fallpoint))
-            {
-                appleCount++;
-            }
-        }
+        var appleCount = countFruitOnRoof(houseRange, appleTreeLocation, apples);
         
         Console.WriteLine(appleCount);
-
-        foreach (var unitsDistance in oranges)
-        {
-            var fallpoint = FallPoint(orangeTreeLocation, unitsDistance);
-
-            if (WithinHouseRange(houseRange, fallpoint))
-            {
-                orangeCount++;
-            }
-        }
+        
+        var orangeCount = countFruitOnRoof(houseRange, orangeTreeLocation, oranges);
         
         Console.WriteLine(orangeCount);
     }
 
-    private static int FallPoint(int treeLocation, int unitsDistance)
+    /// <summary>
+    /// Counts the number of fruits that fall within the house range.
+    /// </summary>
+    /// <param name="houseRange">The range of the house.</param>
+    /// <param name="treeLocation">The location of the tree.</param>
+    /// <param name="fruits">The list of distances fruits fall from the tree.</param>
+    /// <returns>The count of fruits that fall within the house range.</returns>
+    private static int countFruitOnRoof(ValueTuple<int, int> houseRange, int treeLocation, List<int> fruits)
     {
-        return treeLocation + unitsDistance;
+        var fruitCount = 0;
+        
+        foreach (var unitsDistance in fruits)
+        {
+            var fallpoint = FallPoint(treeLocation, unitsDistance);
+
+            if (WithinHouseRange(houseRange, fallpoint))
+            {
+               fruitCount++;
+            }
+        }
+
+        return fruitCount;
     }
 
-    private static bool WithinHouseRange(ValueTuple<int, int> houseRange, int fallPoint)
+    /// <summary>
+    /// Calculates the fall point of a fruit given its tree location and distance.
+    /// </summary>
+    /// <param name="treeLocation">The location of the tree.</param>
+    /// <param name="distance">The distance the fruit falls from the tree.</param>
+    /// <returns>The fall point of the fruit.</returns>
+    private static int FallPoint(int treeLocation, int distance)
     {
-        if (fallPoint >= houseRange.Item1 && fallPoint <= houseRange.Item2)
+        return treeLocation + distance;
+    }
+
+    /// <summary>
+    /// Checks if the fall point is within the house range.
+    /// </summary>
+    /// <param name="houseRange">The range of the house.</param>
+    /// <param name="fallPoint">The fall point of the fruit.</param>
+    /// <returns>True if the fall point is within the house range, otherwise false.</returns>
+    private static bool WithinHouseRange((int start, int end) houseRange, int fallPoint)
+    {
+        if (fallPoint >= houseRange.start && fallPoint <= houseRange.end)
         {
             return true;
         }
