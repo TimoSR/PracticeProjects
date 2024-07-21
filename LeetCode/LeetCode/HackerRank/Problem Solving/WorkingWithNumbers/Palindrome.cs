@@ -2,6 +2,10 @@ namespace LeetCode.HackerRank.Problem_Solving.WorkingWithNumbers;
 
 public class Palindrome
 {
+    
+    // We should think of all numbers a set max or min range of values we can iterate over
+    // So we can think 3 as a list of natural value 1, 2, 3.
+    
     public static void LargestPalindrome3Digit()
     {
         var largestPalindrome = 0;
