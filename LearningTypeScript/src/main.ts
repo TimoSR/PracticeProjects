@@ -5,6 +5,7 @@ import {minMaxSum} from "./HackerRank/ProblemSolving/Arrays/MinMaxSum";
 import {BinaryHexASCII} from "./LanguageBasics/Strings/BinaryHexASCII";
 import {LongRawStringLiterals} from "./LanguageBasics/Strings/LongRawStringLiterals";
 import {FilteringAndJoiningStringArrays} from "./LanguageBasics/Strings/FilteringAndJoiningStringArrays";
+import {TimeConversion} from "./HackerRank/ProblemSolving/Date&Time/TimeConversion";
 
 function main() {
 
@@ -18,6 +19,7 @@ function main() {
     minMaxSum(array2);
     BinaryHexASCII.charHexBinaryStuff();
     FilteringAndJoiningStringArrays.filterArray();
+    console.log(TimeConversion.timeConversion("S"))
 }
 
 // Run the main function

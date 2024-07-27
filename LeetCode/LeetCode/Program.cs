@@ -1,4 +1,5 @@
-﻿using LeetCode.SystemBasics;
+﻿using LeetCode.HackerRank.Problem_Solving.DateTime;
+using LeetCode.SystemBasics;
 
 /*BinaryHexASCII.CharHexBinaryStuff();
 WorkingWithStringTemplates.StringStuffReplace();
@@ -40,3 +41,10 @@ for (int i = 0; i < arr3.Length; i++)
     arr4[i] = arr3[i];
     Console.Write($"{arr4[i]} ");
 }
+
+Console.WriteLine("\n");
+
+
+
+var time = TimeConversion.timeConversion("07:01:00PM");
+Console.WriteLine(time);
