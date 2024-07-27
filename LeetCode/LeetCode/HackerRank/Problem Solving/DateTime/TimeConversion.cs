@@ -2,10 +2,6 @@ namespace LeetCode.HackerRank.Problem_Solving.DateTime;
 
 public class TimeConversion
 {
-
-    private string noonTime = "12:01:00PM";
-    private string midnightTime = "12:01:00AM";
-    
     // A lot of slicing
     
     public static string timeConversion(string s)
