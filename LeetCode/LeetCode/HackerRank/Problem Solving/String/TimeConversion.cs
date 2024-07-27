@@ -7,29 +7,29 @@ public class TimeConversion
     public static string timeConversion(string s)
     {
         var prefix = s.Substring(s.Length - 2);
-        var time = s.Remove(s.Length-2);
+        var time = s.Remove(s.Length - 2);
         var values = time.Split(":");
-        var hour = int.Parse(values[0]);
-        var minute = int.Parse(values[1]);
+        var hours = int.Parse(values[0]);
+        var minutes = int.Parse(values[1]);
         var seconds = int.Parse(values[2]);
-        
+
         if (prefix == "AM")
         {
-            if (hour == 12)
+            if (hours == 12)
             {
-                hour = 0;
+                hours = 0;
             }
         }
 
         if (prefix == "PM")
         {
-            if (hour != 12)
+            if (hours != 12)
             {
-                hour += 12;
+                hours += 12;
             }
         }
 
-        return $"{hour:D2}:{minute:D2}:{seconds:D2}";
+        return $"{hours:D2}:{minutes:D2}:{seconds:D2}";
     }
     
     public static string GPTtimeConversion(string s)
