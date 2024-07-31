@@ -10,8 +10,8 @@ class IShape : Interface {
     public: virtual double getArea() = 0;
     public: virtual double getPerimeter() = 0;
 
-    public: static void checkIfIShape(IShape* animal) {
-        if (IShape* dog = dynamic_cast<IShape*>(animal)) {
+    public: static void checkIfIShape(IShape* shape) {
+        if (IShape* iShape = dynamic_cast<IShape*>(shape)) {
             println("True! Is an IShape!");
         }
     }
@@ -25,7 +25,7 @@ class Rectangle : public IShape {
 
     public: static constexpr double MAX = 42;
 
-    // Constructor & Deconstructors are supported
+    // Constructor & De-Constructor are supported
     public: Rectangle(double width, double height) {
 
         _width = width;
@@ -72,7 +72,10 @@ int main() {
     // Aggregate initialization, Stack Allocated
     Point p = {.x = 1.0, y: 2.0}; // demonstrating two different ways
 
-    println("Width: {0}", rect0->getWidth());
+    // -> means that we are requesting a method from an object on the heap
+    // . means that we are requesting a method from an object on the stack
+
+    println("Height: {1}, Width: {0}", rect0->getWidth(), rect0->getHeight());
     println("Height: {}", rect0->getHeight());
     println("Area: {}", rect0->getArea());
     println("Perimeter: {}", rect0->getPerimeter());
