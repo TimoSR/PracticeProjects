@@ -7,10 +7,10 @@ class Interface {};
 // Abstract base class to represent the Shape interface
 class IShape : Interface {
 
-    public: virtual double getArea() = 0;
-    public: virtual double getPerimeter() = 0;
+    public: virtual double area() = 0;
+    public: virtual double perimeter() = 0;
 
-    public: static void checkIfIShape(IShape* shape) {
+    public: static void check_for_IShape(IShape* shape) {
         if (IShape* iShape = dynamic_cast<IShape*>(shape)) {
             println("True! Is an IShape!");
         }
@@ -18,7 +18,7 @@ class IShape : Interface {
 };
 
 // Concrete class to represent a Rectangle
-class Rectangle : public IShape {
+class Rectangle final : public IShape {
 
     private: double _width;
     private: double _height;
@@ -32,23 +32,25 @@ class Rectangle : public IShape {
         _height = height;
     }
 
+    public: void test_function() {}
+
     // Public property getter for width
-    public: double getWidth() {
+    public: double width() {
         return _width;
     }
 
     // Public property getter for height
-    public: double getHeight() {
+    public: double height() {
         return _height;
     }
 
-    // Implement the getArea function
-    public: double getArea() override {
+    // Implement the area function
+    public: double area() override {
         return _width * _height;
     }
 
-    // Implement the getPerimeter function
-    public: double getPerimeter() override {
+    // Implement the perimeter function
+    public: double perimeter() override {
         return 2.0 * (_width + _height);
     }
 };
@@ -70,21 +72,21 @@ int main() {
     Rectangle rect2(3.0, 4.0);
 
     // Aggregate initialization, Stack Allocated
-    Point p = {.x = 1.0, y: 2.0}; // demonstrating two different ways
+    Point p = {.x = 1.0, y : 2.0}; // demonstrating two different ways
 
     // -> means that we are requesting a method from an object on the heap
     // . means that we are requesting a method from an object on the stack
 
-    println("Height: {1}, Width: {0}", rect0->getWidth(), rect0->getHeight());
-    println("Height: {}", rect0->getHeight());
-    println("Area: {}", rect0->getArea());
-    println("Perimeter: {}", rect0->getPerimeter());
+    println("Height: {1}, Width: {0}", rect0->width(), rect0->height());
+    println("Height: {}", rect0->height());
+    println("Area: {}", rect0->area());
+    println("Perimeter: {}", rect0->perimeter());
     println("{0}", Rectangle::MAX);
 
-    println("{}", rect1->getArea());
+    println("{}", rect1->area());
     println("{}", rect1->MAX);
 
-    println("{}", rect2.getArea());
+    println("{}", rect2.area());
 
     println("{}", p.x);
 
@@ -92,7 +94,11 @@ int main() {
         println("True!");
     }
 
-    IShape::checkIfIShape(rect0);
+    float a = 0;
+
+    println("lol {0}", typeid(a).name());
+
+    IShape::check_for_IShape(rect0);
 
     delete rect0;
 
