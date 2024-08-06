@@ -8,7 +8,7 @@ class SpreadElement {
         const single = [...row0, ...row1, ...row2];
 
         for (let i = 0; i < single.length; i++) {
-            process.stdout.write(`${single[i]}, `);
+            console.log(`${single[i]}, `);
         }
     }
 }

@@ -1,6 +1,8 @@
 export class Arrays {
 
+    // Limiting array size
     private static array: number[] = new Array(6);
+    // Initializing the array with zeros
     private static arrayFill: number[] = new Array(6).fill(0);
 
     public static printer(): void {
