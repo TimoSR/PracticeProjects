@@ -2,7 +2,7 @@
 // Created by Archit3ct on 01/08/2024.
 //
 
-#include "Rectangle2.h"
+#include "Rectangle2.hpp"
 
 // Constructor
 Rectangle2::Rectangle2(double width, double height) : _width(width), _height(height) {}
@@ -30,4 +30,4 @@ double Rectangle2::perimeter() {
 void Rectangle2::test_function() {}
 
 
-#include "Rectangle2.h"
+#include "Rectangle2.hpp"

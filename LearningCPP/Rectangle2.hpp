@@ -2,11 +2,11 @@
 // Created by Archit3ct on 01/08/2024.
 //
 
-#ifndef LEARNINGCPP_RECTANGLE2_H
-#define LEARNINGCPP_RECTANGLE2_H
+#ifndef LEARNINGCPP_RECTANGLE2_HPP
+#define LEARNINGCPP_RECTANGLE2_HPP
 
 
-#include "IShape.h"
+#include "IShape.hpp"
 
 /*
     .h files, or header files, are used to list the publicly accessible instance variables
@@ -20,7 +20,6 @@
     classes they can use without being able to see how you implemented those methods. They are
     more for the people using your code rather than the compiler. As was said before: it's the convention.
 */
-
 
 class Rectangle2 : public IShape {
 
@@ -43,4 +42,4 @@ class Rectangle2 : public IShape {
 
 };
 
-#endif //LEARNINGCPP_RECTANGLE2_H
+#endif //LEARNINGCPP_RECTANGLE2_HPP

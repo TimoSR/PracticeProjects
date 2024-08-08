@@ -1,6 +1,6 @@
 #include<print>
 #include "Rectangle1.cpp"
-#include "Rectangle2.h"
+#include "Rectangle2.hpp"
 
 using namespace std;
 
@@ -18,7 +18,7 @@ int main() {
     auto rect1 = make_unique<Rectangle2>(3.0, 4.0);
 
     // Stack allocation, automatic storage duration, will be automatically destroyed when it goes out of scope
-    Rectangle1 rect2(3.0, 4.0);
+    Rectangle2 rect2(3.0, 4.0);
 
     // Aggregate initialization, Stack Allocated
     Point p = {.x = 1.0, y : 2.0}; // demonstrating two different ways

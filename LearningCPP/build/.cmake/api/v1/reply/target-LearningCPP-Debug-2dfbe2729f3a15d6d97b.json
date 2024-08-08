@@ -35,7 +35,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4 -fcolor-diagnostics"
+					"fragment" : "-g -std=gnu++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.4"
 				}
 			],
 			"language" : "CXX",
@@ -114,7 +114,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "IShape.h",
+			"path" : "IShape.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -125,7 +125,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : "Rectangle2.h",
+			"path" : "Rectangle2.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

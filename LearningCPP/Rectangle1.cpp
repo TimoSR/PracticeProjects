@@ -1,7 +1,7 @@
 //
 // Created by Archit3ct on 01/08/2024.
 //
-#include "IShape.h"
+#include "IShape.hpp"
 
 class Rectangle1 final : public IShape {
 

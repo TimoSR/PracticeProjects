@@ -2,8 +2,8 @@
 // Created by Archit3ct on 01/08/2024.
 //
 
-#ifndef LEARNINGCPP_ISHAPE_H
-#define LEARNINGCPP_ISHAPE_H
+#ifndef LEARNINGCPP_ISHAPE_HPP
+#define LEARNINGCPP_ISHAPE_HPP
 
 #include<print>
 
@@ -24,4 +24,4 @@ public: static void check_for_IShape(IShape* shape) {
     }
 };
 
-#endif //LEARNINGCPP_ISHAPE_H
+#endif //LEARNINGCPP_ISHAPE_HPP
