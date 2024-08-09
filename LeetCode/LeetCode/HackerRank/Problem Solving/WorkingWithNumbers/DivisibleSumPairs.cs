@@ -14,7 +14,9 @@ public class DivisibleSumPairs
 
                 var sum = value1 + value2;
 
-                if (sum % k == 0){
+                bool divisibleByK = sum % k == 0;
+
+                if (divisibleByK){
 
                     pairs.Add((value1, value2));
                     
