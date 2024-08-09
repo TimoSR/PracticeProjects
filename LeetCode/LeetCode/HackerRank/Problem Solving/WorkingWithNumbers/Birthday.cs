@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace LeetCode.HackerRank.Problem_Solving.WorkingWithNumbers;
 
 public class Birthday
@@ -5,7 +7,6 @@ public class Birthday
     public static int birthday(List<int> s, int d, int m)
     {
         var count = 0;
-
         var sumGoal = d;
         var pieces = m;
 
@@ -27,7 +28,6 @@ public class Birthday
             {
                 count++;
             }
-            
         }
 
         return count;

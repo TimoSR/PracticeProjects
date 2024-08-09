@@ -58,3 +58,28 @@ _deps
 *-prefix/
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,cmake
+.vs/slnx.sqlite
+
+.vs/VSWorkspaceState.json
+
+LeetCode/.vs/LeetCode/DesignTimeBuild/.dtbcache.v2
+
+LeetCode/.vs/LeetCode/FileContentIndex/4cbec334-6905-470a-9896-7c4f2e5df422.vsidx
+
+LeetCode/.vs/LeetCode/FileContentIndex/60550873-4f86-45bf-a17f-34208a51f38f.vsidx
+
+LeetCode/.vs/LeetCode/v17/DocumentLayout.json
+
+LeetCode/.vs/LeetCode/v17/.suo
+
+LeetCode/.vs/LeetCode/FileContentIndex/a90e6594-16b6-4518-a128-076ddf49ea2c.vsidx
+
+LeetCode/.vs/LeetCode/FileContentIndex/db8b90e4-67e4-4fc0-a795-a0a59d195325.vsidx
+
+LeetCode/.vs/LeetCode/v17/.futdcache.v2
+
+LeetCode/.vs/ProjectEvaluation/leetcode.metadata.v8.bin
+
+LeetCode/.vs/ProjectEvaluation/leetcode.projects.v8.bin
+
+LeetCode/.vs/ProjectEvaluation/leetcode.strings.v8.bin
