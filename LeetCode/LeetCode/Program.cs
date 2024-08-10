@@ -50,3 +50,9 @@ var time = TimeConversion.timeConversion("07:01:00PM");
 Console.WriteLine(time);
 
 Console.WriteLine(DayOfProgrammers.Gregorian256Day(1918));
+
+List<int> items = [3, 10,2, 9];
+var k = 1;
+var b = 12;
+
+BonAppetit.bonAppetit(items, k, b);
