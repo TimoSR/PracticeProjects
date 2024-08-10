@@ -48,3 +48,5 @@ Console.WriteLine("\n");
 
 var time = TimeConversion.timeConversion("07:01:00PM");
 Console.WriteLine(time);
+
+Console.WriteLine(DayOfProgrammers.Gregorian256Day(1918));
