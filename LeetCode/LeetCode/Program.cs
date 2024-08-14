@@ -56,3 +56,7 @@ var k = 1;
 var b = 12;
 
 BonAppetit.bonAppetit(items, k, b);
+
+List<int> socks = [1, 2, 1, 2, 1, 3, 2];
+
+var pairs = SockMerchant.sockMerchant(7, socks); 
