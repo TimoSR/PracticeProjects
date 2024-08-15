@@ -18,7 +18,6 @@ public class PageCount {
         var flips = 0;
 
         var book = new Book(bookPages);
-
         
         foreach(var page in book.PagePairs) {
 
@@ -44,7 +43,18 @@ public class PageCount {
             for (int i = 0; i <= totalPages / 2; i++)
             {
                 int leftPage = 2 * i;
-                int rightPage = leftPage + 1 <= totalPages ? leftPage + 1 : -1; // -1 for the last single page
+                int rightPage = 0; 
+
+                // -1 for the last single page
+                if(leftPage + 1 <= totalPages) {
+
+                    rightPage = leftPage + 1;
+
+                } else{
+
+                    rightPage = -1;
+                }
+
                 PagePairs.Add((leftPage, rightPage));
             }
         }
