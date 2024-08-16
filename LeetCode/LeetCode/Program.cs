@@ -61,4 +61,4 @@ List<int> socks = [1, 2, 1, 2, 1, 3, 2];
 
 var pairs = SockMerchant.sockMerchant(7, socks); 
 
-var book = PageCount.pageCount(6, 3);
+var book = PageCount.pageCount(5, 3);
