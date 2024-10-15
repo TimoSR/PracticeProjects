@@ -1,4 +1,4 @@
-namespace HackerRank.Flow;
+/*namespace HackerRank.Flow;
 
 public class FormingAMagicSquare
 {
@@ -6,4 +6,4 @@ public class FormingAMagicSquare
     {
         
     }
-}
+}*/
