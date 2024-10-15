@@ -66,3 +66,5 @@ var book = PageCount.pageCount(5, 3);
 var exploringWritingEnums = new ExploringWritingEnums();
 
 ExploringWritingEnums.WritingEnums();
+
+TestingStatic.testingStatic();
