@@ -1,4 +1,4 @@
-namespace HelloWorld;
+namespace LearningCSharp.SystemBasics.UnderstandingStatic;
 
 internal static class StaticClassLogger
 {

@@ -63,8 +63,6 @@ var pairs = SockMerchant.sockMerchant(7, socks);
 
 var book = PageCount.pageCount(5, 3);
 
-var exploringWritingEnums = new ExploringWritingEnums();
-
 ExploringWritingEnums.WritingEnums();
 
 TestingStatic.testingStatic();

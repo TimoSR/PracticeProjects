@@ -1,4 +1,4 @@
-using HelloWorld;
+using LearningCSharp.SystemBasics.UnderstandingStatic;
 
 public class TestingStatic
 {
