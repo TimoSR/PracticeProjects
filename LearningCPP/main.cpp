@@ -23,14 +23,14 @@ int main() {
     // Aggregate initialization, Stack Allocated
     Point p = {.x = 1.0, y : 2.0}; // demonstrating two different ways
 
-    // -> means that we are requesting a method from an object on the heap
-    // . means that we are requesting a method from an object on the stack
-
     println("Height: {1}, Width: {0}", rect0->width(), rect0->height());
     println("Height: {}", rect0->height());
     println("Area: {}", rect0->area());
     println("Perimeter: {}", rect0->perimeter());
     println("{0}", Rectangle1::MAX);
+
+    // -> means that we are requesting a method from an object on the heap
+    // . means that we are requesting a method from an object on the stack
 
     println("{}", rect1->area());
     println("{}", rect1->MAX);
