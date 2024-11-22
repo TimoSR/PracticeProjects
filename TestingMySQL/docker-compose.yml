@@ -1,0 +1,27 @@
+﻿version: '3.9'
+
+services:
+  testingmysql:
+    build:
+      context: .
+      dockerfile: WebApplication1/Dockerfile
+    depends_on:
+      - mysql # Ensure MySQL starts before this service
+    #environment:
+    # Add any environment variables if required for testingmysql service
+
+  mysql:
+    image: mysql:latest
+    container_name: mysql-blog
+    environment:
+      MYSQL_ROOT_PASSWORD: pass # Set the root password
+      MYSQL_DATABASE: blog      # Initialize the `blog` database
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+
+volumes:
+  mysql_data:
+    driver: local
