@@ -1,6 +1,7 @@
-import {Counter, ICounter} from "./Counter";
-import {CorrectFlock} from "./CorrectFlock";
-import {WrongFlock} from "./WrongFlock";
+import { Counter, ICounter } from "./Counter";
+import { CorrectFlock } from "./CorrectFlock";
+import { WrongFlock } from "./WrongFlock";
+import { SomeFunction } from "./RustyTypes";
 
 const counter: ICounter = Counter();
 
@@ -31,3 +32,6 @@ const result1 =
     .conjoin(flockA1.breed(flockB1));
 
 console.log(result1.getSeagulls());
+
+const rusty = SomeFunction();
+rusty.AnotherFunction();

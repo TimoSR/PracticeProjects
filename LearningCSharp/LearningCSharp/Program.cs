@@ -34,7 +34,8 @@ foreach (var value in arr3)
     Console.Write($"{value} ");
 }
 
-Console.WriteLine("\n");
+
+System.Console.WriteLine("\n");
 
 for (int i = 0; i < arr3.Length; i++)
 {
