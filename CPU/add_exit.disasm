@@ -1,0 +1,7 @@
+add_exit:
+(__TEXT,__text) section
+_main:
+00000001000002d8	mov	w0, #0x2
+00000001000002dc	mov	w1, #0x3
+00000001000002e0	add	w0, w0, w1
+00000001000002e4	ret

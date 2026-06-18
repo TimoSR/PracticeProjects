@@ -21,7 +21,7 @@ int main() {
     Rectangle2 rect2(3.0, 4.0);
 
     // Aggregate initialization, Stack Allocated
-    Point p = {.x = 1.0, y : 2.0}; // demonstrating two different ways
+    //Point p = {.x = 1.0, y : 2.0}; // demonstrating two different ways
 
     println("Height: {1}, Width: {0}", rect0->width(), rect0->height());
     println("Height: {}", rect0->height());
